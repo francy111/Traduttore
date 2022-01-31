@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Traduttore">
         <activity
+            android:name=".TranslationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
