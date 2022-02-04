@@ -1,3 +1,39 @@
 <resources>
     <string name="app_name">Traduttore</string>
+    <string name="traduttore">TRADUTTORE</string>
+    <string name="info">
+        JLTA è un\'applicazione di traduzione per Android.
+        All\'interno delle impostazioni sarà possibile indicare le lingue
+        di preferenza, sia di origine, che di arrivo. Per la traduzione è
+        necessario eseguire un login utilizzando un token dell\'API deepl.
+    </string>
+    <string name="lingua_app">Lingua applicazione: ITA</string>
+    <string name="versione_app">Versione: 0.0.1 Beta</string>
+
+    <string-array name="lingue_traduzione">
+        <item>Bulgaro</item>
+        <item>Ceco</item>
+        <item>Cinese</item>
+        <item>Danese</item>
+        <item>Estone</item>
+        <item>Finlandese</item>
+        <item>Francese</item>
+        <item>Giapponese</item>
+        <item>Greco</item>
+        <item>Inglese</item>
+        <item>Italiano</item>
+        <item>Lettone</item>
+        <item>Lituano</item>
+        <item>Olandese</item>
+        <item>Polacco</item>
+        <item>Portoghese</item>
+        <item>Rumeno</item>
+        <item>Russo</item>
+        <item>Slovacco</item>
+        <item>Sloveno</item>
+        <item>Spagnolo</item>
+        <item>Svedese</item>
+        <item>Tedesco</item>
+        <item>Ungherese</item>
+    </string-array>
 </resources>
