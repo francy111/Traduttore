@@ -4,10 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/frame.xml" value="0.75" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14136807817589578" />
         <entry key="app/src/main/res/drawable/bianchetto.xml" value="0.14136807817589578" />
         <entry key="app/src/main/res/drawable/bianchino.xml" value="0.14136807817589578" />
         <entry key="app/src/main/res/drawable/bluetto.xml" value="0.14136807817589578" />
         <entry key="app/src/main/res/drawable/frame.xml" value="0.21574074074074073" />
+        <entry key="app/src/main/res/drawable/provabianchino.xml" value="0.14276315789473684" />
         <entry key="app/src/main/res/drawable/provabianchino2.xml" value="0.14136807817589578" />
         <entry key="app/src/main/res/drawable/provablu.xml" value="0.14276315789473684" />
         <entry key="app/src/main/res/drawable/provablu2.xml" value="0.14276315789473684" />
