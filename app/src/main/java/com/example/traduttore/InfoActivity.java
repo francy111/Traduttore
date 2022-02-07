@@ -2,6 +2,7 @@ package com.example.traduttore;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 public class InfoActivity extends AppCompatActivity {
@@ -10,5 +11,6 @@ public class InfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
+        getWindow().setNavigationBarColor(Color.BLACK);
     }
 }
