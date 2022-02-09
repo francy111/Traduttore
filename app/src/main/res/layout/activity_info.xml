@@ -267,7 +267,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:fontFamily="@font/montserrat"
-        android:text="<Traduttore> è un'applicazione Android per la traduzione di testo."
+        android:text="CocSlator è un'applicazione Android per la traduzione di testo."
         android:textAlignment="center"
         android:textColor="#333A85"
         android:textSize="16sp"
@@ -321,5 +321,19 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline26"
         app:layout_constraintStart_toStartOf="@+id/guideline25"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="CocSlator"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintEnd_toStartOf="@+id/guideline12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

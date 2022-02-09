@@ -11,6 +11,7 @@
     <string name="versione_app">Versione: 0.0.1 Beta</string>
 
     <string-array name="lingue_traduzione">
+        <item>Rileva Lingua</item>
         <item>Bulgaro</item>
         <item>Ceco</item>
         <item>Cinese</item>

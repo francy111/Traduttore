@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "756169868415",
+    "project_id": "cocslater-c6fa3",
+    "storage_bucket": "cocslater-c6fa3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756169868415:android:bb35ba191a73cd77182b4a",
+        "android_client_info": {
+          "package_name": "com.example.traduttore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "756169868415-9j8lsnqqn3mh037t1k6pcihuutit198t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUXDL5AivAgoKf9ishG69mMQ9cPvtgNxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "756169868415-9j8lsnqqn3mh037t1k6pcihuutit198t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,6 +9,7 @@
         <entry key="app/src/main/res/drawable/bianchino.xml" value="0.14136807817589578" />
         <entry key="app/src/main/res/drawable/bluetto.xml" value="0.14136807817589578" />
         <entry key="app/src/main/res/drawable/frame.xml" value="0.21574074074074073" />
+        <entry key="app/src/main/res/drawable/grigietto.xml" value="0.11217105263157895" />
         <entry key="app/src/main/res/drawable/provabianchino.xml" value="0.14276315789473684" />
         <entry key="app/src/main/res/drawable/provabianchino2.xml" value="0.14136807817589578" />
         <entry key="app/src/main/res/drawable/provablu.xml" value="0.14276315789473684" />
@@ -16,11 +17,12 @@
         <entry key="app/src/main/res/drawable/provagrigino.xml" value="0.14276315789473684" />
         <entry key="app/src/main/res/drawable/provagrigino2.xml" value="0.14136807817589578" />
         <entry key="app/src/main/res/drawable/provagrigino3.xml" value="0.14136807817589578" />
-        <entry key="app/src/main/res/layout/activity_info.xml" value="0.25" />
+        <entry key="app/src/main/res/drawable/provagrigino4.xml" value="0.11217105263157895" />
+        <entry key="app/src/main/res/layout/activity_info.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_test_traduzione.xml" value="0.19427083333333334" />
-        <entry key="app/src/main/res/layout/activity_translation.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_translation.xml" value="0.6623874367349546" />
         <entry key="app/src/main/res/layout/item_spinner.xml" value="0.13256578947368422" />
         <entry key="app/src/main/res/layout/item_spinner2.xml" value="0.13256578947368422" />
         <entry key="app/src/main/res/layout/provablu.xml" value="0.13256578947368422" />
