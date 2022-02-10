@@ -3,46 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/drawable/bianchetto.xml" value="0.3828125" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/drawable/grigietto.xml" value="0.38229166666666664" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/drawable/ic_freccette.xml" value="0.22135416666666666" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/drawable/provabianchino.xml" value="0.3828125" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/drawable/provabianchino2.xml" value="0.3828125" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/drawable/provabianchino3.xml" value="0.3828125" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/drawable/provablu.xml" value="0.3828125" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/drawable/provagrigino.xml" value="0.38229166666666664" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/drawable/provagrigino2.xml" value="0.3828125" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/drawable/provagrigino3.xml" value="0.38229166666666664" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/drawable/provagrigino4.xml" value="0.38229166666666664" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/drawable/provagrigino5.xml" value="0.38229166666666664" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/layout/activity_info.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/layout/activity_menu.xml" value="0.33" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/layout/activity_settings.xml" value="0.5" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/layout/activity_translation.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/layout/item_spinner.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/layout/item_spinner2.xml" value="0.20520833333333333" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/layout/spinner_item_dropdown.xml" value="0.35260416666666666" />
-        <entry key="..\:/Users/Franc/AndroidStudioProjects/Traduttore/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3828125" />
         <entry key="app/src/main/res/drawable-v24/frame.xml" value="0.75" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14136807817589578" />
         <entry key="app/src/main/res/drawable/bianchetto.xml" value="0.14136807817589578" />
         <entry key="app/src/main/res/drawable/bianchino.xml" value="0.14136807817589578" />
         <entry key="app/src/main/res/drawable/bluetto.xml" value="0.14136807817589578" />
         <entry key="app/src/main/res/drawable/frame.xml" value="0.21574074074074073" />
+        <entry key="app/src/main/res/drawable/grigietto.xml" value="0.11217105263157895" />
         <entry key="app/src/main/res/drawable/provabianchino.xml" value="0.14276315789473684" />
         <entry key="app/src/main/res/drawable/provabianchino2.xml" value="0.14136807817589578" />
+        <entry key="app/src/main/res/drawable/provabianchino3.xml" value="0.11217105263157895" />
         <entry key="app/src/main/res/drawable/provablu.xml" value="0.14276315789473684" />
         <entry key="app/src/main/res/drawable/provablu2.xml" value="0.14276315789473684" />
         <entry key="app/src/main/res/drawable/provagrigino.xml" value="0.14276315789473684" />
         <entry key="app/src/main/res/drawable/provagrigino2.xml" value="0.14136807817589578" />
         <entry key="app/src/main/res/drawable/provagrigino3.xml" value="0.14136807817589578" />
+        <entry key="app/src/main/res/drawable/provagrigino4.xml" value="0.11217105263157895" />
+        <entry key="app/src/main/res/drawable/provagrigino5.xml" value="0.11217105263157895" />
         <entry key="app/src/main/res/layout/activity_info.xml" value="0.375" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.1793840358595527" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_test_traduzione.xml" value="0.19427083333333334" />
-        <entry key="app/src/main/res/layout/activity_translation.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_translation.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_spinner.xml" value="0.13256578947368422" />
+        <entry key="app/src/main/res/layout/item_spinner2.xml" value="0.13256578947368422" />
+        <entry key="app/src/main/res/layout/item_spinner3.xml" value="0.13256578947368422" />
         <entry key="app/src/main/res/layout/provablu.xml" value="0.13256578947368422" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14276315789473684" />
       </map>

@@ -120,6 +120,13 @@
         app:layout_constraintGuide_percent="0.2" />
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline110"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline72"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -210,12 +217,12 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:fontFamily="@font/montserrat"
-        android:text="Do not show loading screen on future starts"
+        android:text="Automatically open settings on startup"
         android:textColor="#333A85"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/view21"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline65"
+        app:layout_constraintStart_toStartOf="@+id/guideline110"
         app:layout_constraintTop_toTopOf="@+id/guideline63" />
 
     <TextView
@@ -255,7 +262,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline70" />
 
     <View
-        android:id="@+id/view24"
+        android:id="@+id/sett2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/provagrigino4"
