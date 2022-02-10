@@ -299,7 +299,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline75" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/sett"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleX="0.65"

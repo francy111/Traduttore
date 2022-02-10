@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MenuActivity extends AppCompatActivity {
@@ -43,6 +44,11 @@ public class MenuActivity extends AppCompatActivity {
         ((TextView)findViewById(R.id.btranslate3)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(MenuActivity.this,TranslationActivity.class));
+            }
+        });
+        ((ImageView)findViewById(R.id.sett)).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MenuActivity.this,SettingsActivity.class));
             }
         });
     }
