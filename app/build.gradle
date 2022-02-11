@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
     id 'com.google.gms.google-services'
-    id 'com.google.firebase.firebase-perf'
 }
 android {
     compileSdk 31
@@ -44,4 +43,6 @@ apply plugin: 'com.google.gms.google-services'
 
 dependencies {
     implementation 'com.google.firebase:firebase-database:19.2.1'
+    implementation 'com.android.volley:volley:1.2.0'
+    implementation 'com.google.firebase:firebase-firestore:21.4.0'
 }
