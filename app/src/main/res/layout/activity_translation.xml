@@ -302,17 +302,19 @@
         android:background="@drawable/grigietto"/>
 
     <View
-        android:id="@+id/view11"
+        android:id="@+id/swap"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="@drawable/bianchetto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline41"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline40"
         app:layout_constraintTop_toTopOf="@+id/guideline38"
-        android:background="@drawable/bianchetto" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <View
-        android:id="@+id/view3"
+        android:id="@+id/translate1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/provabianchino3"
@@ -324,7 +326,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/translate2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/minion_pro_regular"
@@ -403,7 +405,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline37" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/frecciette"
         android:layout_width="59dp"
         android:layout_height="26dp"
         app:layout_constraintBottom_toBottomOf="parent"
