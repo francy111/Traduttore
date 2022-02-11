@@ -350,7 +350,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline46" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine4"
+        android:id="@+id/otext"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:ems="10"
@@ -391,9 +391,10 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine5"
+        android:id="@+id/dtext"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:editable="false"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"

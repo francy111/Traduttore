@@ -10,6 +10,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -26,11 +27,10 @@ public class SettingsActivity extends AppCompatActivity {
         int a = s.getInt("origine", 0);
         int b = s.getInt("destinazione", 1);
 
-        String[] test = getResources().getStringArray(R.array.lingue_traduzione);
-        String[] lingue = new String[test.length-1];
-        for(int i = 0; i < lingue.length; i++){
-            lingue[i] = test[i+1];
-        }
+        SharedPreferences s2 = getSharedPreferences("AUTHKEY", MODE_PRIVATE);
+        ((EditText) findViewById(R.id.key)).setText(s2.getString("key", null));
+
+        String[] lingue = getResources().getStringArray(R.array.lingue_traduzione);
 
         final Spinner spinner1 = findViewById(R.id.settingsor);
         final Spinner spinner2 = findViewById(R.id.settingsde);
@@ -48,7 +48,6 @@ public class SettingsActivity extends AppCompatActivity {
 
         findViewById(R.id.save1).setBackgroundColor(Color.WHITE);
         findViewById(R.id.save2).setBackgroundColor(Color.rgb(245, 247, 255));
-
 
         ((View)findViewById(R.id.save1)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -85,6 +84,32 @@ public class SettingsActivity extends AppCompatActivity {
 
         ((View)findViewById(R.id.save2)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                SharedPreferences s = getSharedPreferences("AUTHKEY", MODE_PRIVATE);
+                String old_s = s.getString("key", "");
+                String new_s = ((EditText) findViewById(R.id.key)).getText().toString();
+
+                if (!old_s.equals(new_s)) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(SettingsActivity.this);
+                    builder.setTitle("Conferma");
+                    builder.setMessage("Vuoi modificare il token di identificazione?");
+                    builder.setCancelable(false);
+                    builder.setPositiveButton("Si", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            String key = ((EditText) findViewById(R.id.key)).getText().toString();
+                            SharedPreferences.Editor e = getSharedPreferences("AUTHKEY", MODE_PRIVATE).edit();
+                            e.putString("key", key);
+                            e.commit();
+                        }
+                    });
+                    builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                        }
+                    });
+                    AlertDialog alertdialog = builder.create();
+                    alertdialog.show();
+                }
             }
         });
     }
