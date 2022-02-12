@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Traduttore</string>
     <string name="traduttore">TRADUTTORE</string>
+    <string name="titolo"></string>
     <string name="info">
         JLTA è un\'applicazione di traduzione per Android.
         All\'interno delle impostazioni sarà possibile indicare le lingue

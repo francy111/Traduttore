@@ -1,28 +1,14 @@
 package com.example.traduttore;
-
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
+import android.os.Handler;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.firestore.CollectionReference;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
-
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
+import androidx.constraintlayout.widget.*;
 
 public class MainActivity extends AppCompatActivity {
     public static HashMap<String, String> sigle;
@@ -62,6 +48,15 @@ public class MainActivity extends AppCompatActivity {
             sigle.put("Tedesco","DE");
             sigle.put("Ungherese","HU");
         }
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Guideline p = findViewById(R.id.blu1);
+                p.setGuidelinePercent(Float.parseFloat("0.5"));
+            }
+        }, 1500);
+
 
         if(check){
             startActivity(new Intent(MainActivity.this, MenuActivity.class));
