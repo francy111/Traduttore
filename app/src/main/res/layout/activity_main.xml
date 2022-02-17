@@ -6,20 +6,126 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <View
+        android:id="@+id/view33"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/provabianchino2"
+        app:layout_constraintBottom_toTopOf="@+id/blu1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view37"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/provabianchino2"
+        app:layout_constraintBottom_toTopOf="@+id/bianco_h"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view24"
+        app:layout_constraintTop_toTopOf="@+id/blu1" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/provagrigino3"
+        app:layout_constraintBottom_toTopOf="@+id/bianco_h2"
+        app:layout_constraintEnd_toStartOf="@+id/bianco_v"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bianco_h" />
+
+    <View
+        android:id="@+id/view24"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/provablu2"
+        app:layout_constraintBottom_toTopOf="@+id/bianco_h"
+        app:layout_constraintEnd_toStartOf="@+id/bianco_v"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blu1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view36"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/provabianchino"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blu1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view38"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/provagrigino2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bianco_v"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bianco_h" />
+
+    <View
+        android:id="@+id/view39"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/provabianchino"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bianco_h" />
+
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/blu2"
+        android:id="@+id/bianco_h2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/provablu"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="1" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bianco_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/blu1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="1" />
+        app:layout_constraintGuide_percent="1.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bianco_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/blu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/provablu"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.0" />
+
+    <View
+        android:id="@+id/view34"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/provagrigino"
+        app:layout_constraintBottom_toTopOf="@+id/bianco_h"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blu1" />
 
     <View
         android:id="@+id/view3"
@@ -28,6 +134,9 @@
         android:background="@drawable/provablu"
         app:layout_constraintBottom_toTopOf="@+id/blu1"
         app:layout_constraintEnd_toStartOf="@+id/blu2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

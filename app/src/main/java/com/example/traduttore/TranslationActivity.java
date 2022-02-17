@@ -15,7 +15,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
-
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -27,7 +26,6 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -209,6 +207,7 @@ public class TranslationActivity extends AppCompatActivity {
                     public void onResponse(String response)
                     {
                         String traduzione = response.substring(response.indexOf("\"text\":\"")+8, response.indexOf("\"}]}"));
+                        ((TextView)findViewById(R.id.dtext)).setTextColor(0x333A85);
                         ((TextView)findViewById(R.id.dtext)).setText(decode(traduzione));
                     }
                 },
@@ -217,6 +216,8 @@ public class TranslationActivity extends AppCompatActivity {
                     @Override
                     public void onErrorResponse(VolleyError error)
                     {
+                        ((TextView)findViewById(R.id.dtext)).setTextColor(Color.RED);
+                        ((TextView)findViewById(R.id.dtext)).setText("Errore durante la traduzione");
                         Log.e("API_error",error.getLocalizedMessage());
                     }
                 }

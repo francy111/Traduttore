@@ -382,7 +382,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
-        android:text="Lingua di destinazione predefinita"
+        android:text="Lingua di origine predefinita"
         android:textAlignment="center"
         android:textColor="#333A85"
         android:textSize="16sp"
