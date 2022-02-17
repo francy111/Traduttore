@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -32,6 +33,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TranslationActivity extends AppCompatActivity {
+    private long mLastClickTime = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +69,10 @@ public class TranslationActivity extends AppCompatActivity {
 
         ((View)findViewById(R.id.swap)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if (SystemClock.elapsedRealtime() - mLastClickTime < 1000) {
+                    return;
+                }
+                mLastClickTime = SystemClock.elapsedRealtime();
                 int l_a = spinner1.getSelectedItemPosition();
                 int l_b = spinner2.getSelectedItemPosition();
 
@@ -79,6 +85,10 @@ public class TranslationActivity extends AppCompatActivity {
         });
         ((View)findViewById(R.id.frecciette)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if (SystemClock.elapsedRealtime() - mLastClickTime < 1000) {
+                    return;
+                }
+                mLastClickTime = SystemClock.elapsedRealtime();
                 int l_a = spinner1.getSelectedItemPosition();
                 int l_b = spinner2.getSelectedItemPosition();
 
@@ -93,6 +103,10 @@ public class TranslationActivity extends AppCompatActivity {
 
         ((View)findViewById(R.id.translate1)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if (SystemClock.elapsedRealtime() - mLastClickTime < 1000) {
+                    return;
+                }
+                mLastClickTime = SystemClock.elapsedRealtime();
                 SharedPreferences s = getSharedPreferences("AUTHKEY", MODE_PRIVATE);
                 String auth_key = s.getString("key", null);
                 if(auth_key  == null){
@@ -123,6 +137,10 @@ public class TranslationActivity extends AppCompatActivity {
 
         ((TextView)findViewById(R.id.translate2)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if (SystemClock.elapsedRealtime() - mLastClickTime < 1000) {
+                    return;
+                }
+                mLastClickTime = SystemClock.elapsedRealtime();
                 SharedPreferences s = getSharedPreferences("AUTHKEY", MODE_PRIVATE);
                 String auth_key = s.getString("key", null);
                 if(auth_key == null){

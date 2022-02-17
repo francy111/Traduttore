@@ -6,12 +6,14 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MenuActivity extends AppCompatActivity {
+    private long mLastClickTime = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +26,19 @@ public class MenuActivity extends AppCompatActivity {
 
         ((View)findViewById(R.id.binfo1)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if (SystemClock.elapsedRealtime() - mLastClickTime < 1000) {
+                    return;
+                }
+                mLastClickTime = SystemClock.elapsedRealtime();
                 startActivity(new Intent(MenuActivity.this,InfoActivity.class));
             }
         });
         ((TextView)findViewById(R.id.binfo2)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if (SystemClock.elapsedRealtime() - mLastClickTime < 1000) {
+                    return;
+                }
+                mLastClickTime = SystemClock.elapsedRealtime();
                 startActivity(new Intent(MenuActivity.this,InfoActivity.class));
             }
         });
@@ -36,26 +46,46 @@ public class MenuActivity extends AppCompatActivity {
 
         ((View)findViewById(R.id.btranslate1)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if (SystemClock.elapsedRealtime() - mLastClickTime < 1000) {
+                    return;
+                }
+                mLastClickTime = SystemClock.elapsedRealtime();
                 startActivity(new Intent(MenuActivity.this,TranslationActivity.class));
             }
         });
         ((TextView)findViewById(R.id.btranslate2)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if (SystemClock.elapsedRealtime() - mLastClickTime < 1000) {
+                    return;
+                }
+                mLastClickTime = SystemClock.elapsedRealtime();
                 startActivity(new Intent(MenuActivity.this,TranslationActivity.class));
             }
         });
         ((TextView)findViewById(R.id.btranslate3)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if (SystemClock.elapsedRealtime() - mLastClickTime < 1000) {
+                    return;
+                }
+                mLastClickTime = SystemClock.elapsedRealtime();
                 startActivity(new Intent(MenuActivity.this,TranslationActivity.class));
             }
         });
         ((ImageView)findViewById(R.id.sett)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if (SystemClock.elapsedRealtime() - mLastClickTime < 1000) {
+                    return;
+                }
+                mLastClickTime = SystemClock.elapsedRealtime();
                 startActivity(new Intent(MenuActivity.this,SettingsActivity.class));
             }
         });
         ((View)findViewById(R.id.sett2)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if (SystemClock.elapsedRealtime() - mLastClickTime < 1000) {
+                    return;
+                }
+                mLastClickTime = SystemClock.elapsedRealtime();
                 startActivity(new Intent(MenuActivity.this,SettingsActivity.class));
             }
         });

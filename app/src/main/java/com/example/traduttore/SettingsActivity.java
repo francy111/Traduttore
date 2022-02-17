@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -15,6 +16,7 @@ import android.widget.Spinner;
 import java.util.Arrays;
 
 public class SettingsActivity extends AppCompatActivity {
+    private long mLastClickTime = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +51,10 @@ public class SettingsActivity extends AppCompatActivity {
 
         ((View)findViewById(R.id.save1)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if (SystemClock.elapsedRealtime() - mLastClickTime < 1000) {
+                    return;
+                }
+                mLastClickTime = SystemClock.elapsedRealtime();
 
                 if((a!=spinner1.getSelectedItemPosition()) || (b!=spinner2.getSelectedItemPosition())){
                     AlertDialog.Builder builder = new AlertDialog.Builder(SettingsActivity.this);
@@ -82,6 +88,10 @@ public class SettingsActivity extends AppCompatActivity {
 
         ((View)findViewById(R.id.save2)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if (SystemClock.elapsedRealtime() - mLastClickTime < 1000) {
+                    return;
+                }
+                mLastClickTime = SystemClock.elapsedRealtime();
                 SharedPreferences s = getSharedPreferences("AUTHKEY", MODE_PRIVATE);
                 String old_s = s.getString("key", "");
                 String new_s = ((EditText) findViewById(R.id.key)).getText().toString();
